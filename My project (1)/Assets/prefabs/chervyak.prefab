@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 9204283694563468523}
   m_Layer: 0
   m_Name: chervyak
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,6 +875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe4375526378ee4d91a2e9a86512607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
+  universe: {fileID: 0}
+  move: 1
 --- !u!1 &2865103805257622988
 GameObject:
   m_ObjectHideFlags: 0

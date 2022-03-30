@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4061292263715889212}
   - component: {fileID: 2285696117461161206}
   - component: {fileID: 340181141181740322}
+  - component: {fileID: 6933655529525918612}
   m_Layer: 0
   m_Name: silvercoin
-  m_TagString: Untagged
+  m_TagString: silvercoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,3 +99,16 @@ MonoBehaviour:
   ry: 90
   rz: 0
   fl: -7
+--- !u!65 &6933655529525918612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340181141181740323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029893015, y: 0.029893015, z: 0.008266353}
+  m_Center: {x: 0, y: 0, z: 0}

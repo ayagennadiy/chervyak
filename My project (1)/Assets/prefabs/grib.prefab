@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8745186022028463008}
   - component: {fileID: 6825718791157530474}
   - component: {fileID: 5294059092574542661}
+  - component: {fileID: 4819850888897326864}
   m_Layer: 0
   m_Name: grib
-  m_TagString: Untagged
+  m_TagString: mushroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,3 +99,16 @@ MonoBehaviour:
   ry: 0
   rz: 90
   fl: 0
+--- !u!65 &4819850888897326864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024098964728225471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.046731763, y: 0.046731774, z: 0.03346951}
+  m_Center: {x: 0, y: 0, z: 0.00833969}

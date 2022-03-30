@@ -6,35 +6,23 @@ public class player : MonoBehaviour
 {
     [SerializeField] GameObject world;
 
-    Vector3 move;
+    [SerializeField] GameObject universe;
 
-    void Start()
-    {
-        move = transform.forward;
-    }
+    public float move = 1;
 
     void Update()
     {
-        world.transform.position -= move * Time.deltaTime;
-    }
+        world.transform.position -= transform.forward * move * Time.deltaTime;
 
-    public void forward()
-    {
-        move = transform.forward;
-    }
-
-    public void back()
-    {
-        move = -transform.forward;
     }
 
     public void right()
     {
-        move = transform.right;
+        universe.transform.Rotate(new Vector3(0, -10, 0));
     }
 
     public void left()
     {
-        move = -transform.right;
+        universe.transform.Rotate(new Vector3(0, 10, 0));
     }
 }
