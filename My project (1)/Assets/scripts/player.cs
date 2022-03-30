@@ -6,33 +6,35 @@ public class player : MonoBehaviour
 {
     [SerializeField] GameObject world;
 
+    Vector3 move;
+
     void Start()
     {
-        
+        move = transform.forward;
     }
 
     void Update()
     {
-        
+        world.transform.position -= move * Time.deltaTime;
     }
 
     public void forward()
     {
-        world.transform.position += transform.forward * Time.deltaTime;
+        move = transform.forward;
     }
 
     public void back()
     {
-        world.transform.position -= transform.forward * Time.deltaTime;
+        move = -transform.forward;
     }
 
     public void right()
     {
-        world.transform.position += transform.right * Time.deltaTime;
+        move = transform.right;
     }
 
     public void left()
     {
-        world.transform.position -= transform.right * Time.deltaTime;
+        move = -transform.right;
     }
 }
