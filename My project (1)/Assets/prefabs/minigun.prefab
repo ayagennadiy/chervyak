@@ -576,9 +576,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6008991750107663886}
+  - component: {fileID: 1475315019424931729}
   m_Layer: 0
   m_Name: minigun hand
-  m_TagString: Untagged
+  m_TagString: decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -601,6 +602,19 @@ Transform:
   m_Father: {fileID: 6867624784292808589}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1475315019424931729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6354555453944091828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4343405, y: 4.5861263, z: 3.9860268}
+  m_Center: {x: -0.59405327, y: 0.048926353, z: 0.510046}
 --- !u!1 &6533531254436451940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9200730545918760601}
   - component: {fileID: 8422961671947062306}
+  - component: {fileID: 7535736401770145540}
   m_Layer: 0
   m_Name: minigun gun
   m_TagString: trap
@@ -1093,3 +1108,16 @@ MonoBehaviour:
   ry: 0
   rz: 360
   fl: 0
+--- !u!65 &7535736401770145540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422961671947062307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9766464, y: 3.0512671, z: 4.478306}
+  m_Center: {x: 0.05942297, y: -0.6634791, z: -3.868351}
