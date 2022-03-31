@@ -9,6 +9,8 @@ public class player : MonoBehaviour
 
     [SerializeField] GameObject universe;
 
+    public float r = 30;
+
     public float move = 1;
 
     bool isstop = false;
@@ -25,7 +27,14 @@ public class player : MonoBehaviour
 
     public Text health;
 
-    public int h;
+    public int h = 10;
+
+    void Start()
+    {
+        coins.text = "coins: " + c;
+        points.text = "points: " + p;
+        health.text = "health: " + h;
+    }
 
     void Update()
     {
@@ -38,12 +47,12 @@ public class player : MonoBehaviour
 
     public void right()
     {
-        universe.transform.Rotate(new Vector3(0, -10, 0));
+        universe.transform.Rotate(new Vector3(0, -r, 0));
     }
 
     public void left()
     {
-        universe.transform.Rotate(new Vector3(0, 10, 0));
+        universe.transform.Rotate(new Vector3(0, r, 0));
     }
 
     public void attack()
@@ -51,6 +60,8 @@ public class player : MonoBehaviour
         try
         {
             Destroy(dec);
+            isstop = false;
+
         }
         catch
         {
@@ -60,37 +71,49 @@ public class player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("shit1");
         switch (other.tag)
         {
             case "decor":
                 isstop = true;
+                Debug.Log("shit2");
                 dec = other.gameObject;
                 break;
             case "bronzecoin":
                 c += 1;
+                Debug.Log("shit3");
                 break;
             case "silvercoin":
                 c += 3;
+                Debug.Log("shit4");
                 break;
             case "goldcoin":
                 c += 10;
+                Debug.Log("shit5");
                 break;
             case "carrot":
                 p += 10;
+                Debug.Log("shit6");
                 break;
             case "kapusta":
                 p += 20;
+                Debug.Log("shit7");
                 break;
             case "mushroom":
                 p += 5;
+                Debug.Log("shit8");
                 break;
             case "trap":
                 h -= 1;
+                Debug.Log("shit9");
                 break;
             default:
                 Debug.Log("shit");
                 break;
         }
+        coins.text = "coins: " + c;
+        points.text = "points: " + p;
+        health.text = "health: " + h;
     }
 
     private void OnTriggerExit(Collider other)
@@ -99,6 +122,7 @@ public class player : MonoBehaviour
         {
             case "decor":
                 isstop = false;
+                Debug.Log("shiit");
                 break;
             case "bronzecoin":
                 Destroy(other.gameObject);
@@ -121,6 +145,7 @@ public class player : MonoBehaviour
             case "trap":
                 break;
             default:
+                Debug.Log("shet");
                 break;
         }
     }

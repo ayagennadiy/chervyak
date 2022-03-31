@@ -172,6 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9008721919991293567}
   - component: {fileID: 3017115238837948265}
+  - component: {fileID: 7166215995193020164}
   m_Layer: 0
   m_Name: hand
   m_TagString: decor
@@ -203,11 +204,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2673123674953843920}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.037449, y: 1, z: 1.3606203}
   m_Center: {x: 4.6341496, y: -7.860055e-16, z: -0.18031019}
+--- !u!54 &7166215995193020164
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673123674953843920}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3234064828603716792
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286871594166943972}
   - component: {fileID: 5304257229350827622}
+  - component: {fileID: 2852319628778481821}
   m_Layer: 0
   m_Name: blade
   m_TagString: trap
@@ -379,11 +397,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5882746153333033935}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.8829203, y: 0.5, z: 1.7842665}
   m_Center: {x: -0.28157663, y: -4.8707994e-17, z: -0.065927505}
+--- !u!54 &2852319628778481821
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5882746153333033935}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6199082639006304474
 GameObject:
   m_ObjectHideFlags: 0
