@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\scripts\coreSpin.cs" />
+    <Compile Include="Assets\scripts\world.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

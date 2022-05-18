@@ -82,26 +82,35 @@ public class player : MonoBehaviour
             case "bronzecoin":
                 c += 1;
                 Debug.Log("shit3");
+                Destroy(other.gameObject);
                 break;
             case "silvercoin":
                 c += 3;
                 Debug.Log("shit4");
+                Destroy(other.gameObject);
                 break;
             case "goldcoin":
                 c += 10;
                 Debug.Log("shit5");
+                Destroy(other.gameObject);
                 break;
             case "carrot":
                 p += 10;
+                gameObject.transform.localScale += new Vector3(0.01f,0.01f,0.01f);
                 Debug.Log("shit6");
+                Destroy(other.gameObject);
                 break;
             case "kapusta":
                 p += 20;
+                gameObject.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
                 Debug.Log("shit7");
+                Destroy(other.gameObject);
                 break;
             case "mushroom":
                 p += 5;
+                gameObject.transform.localScale += new Vector3(0.005f, 0.005f, 0.005f);
                 Debug.Log("shit8");
+                Destroy(other.gameObject);
                 break;
             case "trap":
                 h -= 1;
@@ -123,24 +132,6 @@ public class player : MonoBehaviour
             case "decor":
                 isstop = false;
                 Debug.Log("shiit");
-                break;
-            case "bronzecoin":
-                Destroy(other.gameObject);
-                break;
-            case "silvercoin":
-                Destroy(other.gameObject);
-                break;
-            case "goldcoin":
-                Destroy(other.gameObject);
-                break;
-            case "carrot":
-                Destroy(other.gameObject);
-                break;
-            case "kapusta":
-                Destroy(other.gameObject);
-                break;
-            case "mushroom":
-                Destroy(other.gameObject);
                 break;
             case "trap":
                 break;
