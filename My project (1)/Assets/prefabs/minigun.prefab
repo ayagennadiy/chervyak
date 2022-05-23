@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 6008991750107663886}
   m_Layer: 0
   m_Name: minigun hand
-  m_TagString: Untagged
+  m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -789,7 +789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6867624784292808590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.89, y: 2, z: 25.69}
+  m_LocalPosition: {x: 7.89, y: 2.44, z: 25.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9200730545918760601}
@@ -808,8 +808,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -824,8 +824,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.43434, y: 4.586126, z: 3.986027}
-  m_Center: {x: -0.5940533, y: 0.04892635, z: 0.510046}
+  m_Size: {x: 3.43434, y: 4.586126, z: 3.5615845}
+  m_Center: {x: -0.59405327, y: 0.048926353, z: 0.72226715}
 --- !u!1 &6873303206489021313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1151,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

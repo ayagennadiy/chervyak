@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1889456876084957897}
   - component: {fileID: 2896517501982665185}
   - component: {fileID: 4413938784482932024}
+  - component: {fileID: 7486470926417428522}
   m_Layer: 0
   m_Name: core
   m_TagString: Respawn
@@ -76,10 +77,33 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7486470926417428522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889456876084957896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2cffe0abd276a4e8cc8145be3ad4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bcoin: {fileID: 0}
+  scoin: {fileID: 0}
+  gcoin: {fileID: 0}
+  carrot: {fileID: 0}
+  grib: {fileID: 0}
+  kapusta: {fileID: 0}
+  dub: {fileID: 0}
+  elka: {fileID: 0}
+  noj: {fileID: 0}
+  gun: {fileID: 0}
+  word: {fileID: 0}
 --- !u!1 &4405937714949188898
 GameObject:
   m_ObjectHideFlags: 0

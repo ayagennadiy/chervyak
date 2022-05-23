@@ -4,31 +4,39 @@ using UnityEngine;
 
 public class world : MonoBehaviour
 {
-    [SerializeField] GameObject bcoin;
-    [SerializeField] GameObject scoin;
-    [SerializeField] GameObject gcoin;
+    public GameObject bcoin;
+    public GameObject scoin;
+    public GameObject gcoin;
 
-    [SerializeField] GameObject noj;
-    [SerializeField] GameObject gun;
+    public GameObject carrot;
+    public GameObject grib;
+    public GameObject kapusta;
 
-    [SerializeField] GameObject grib;
-    [SerializeField] GameObject carrot;
-    [SerializeField] GameObject kapusta;
+    public GameObject dub;
+    public GameObject elka;
 
-    [SerializeField] GameObject core;
+    public GameObject noj;
+    public GameObject gun;
 
-    [SerializeField] GameObject dub;
-    [SerializeField] GameObject elka;
-
-    List<List<string>> zones;
-    // Start is called before the first frame update
+    public GameObject word;
     void Start()
     {
-        for (int i = -5; i < 5; i++)
+        GameObject[] zones = { bcoin, scoin, gcoin, carrot, grib, kapusta, dub, elka, noj, gun };
+        foreach (GameObject i in zones)
         {
-            for (int j = -5; j < 5; j++)
+            for (int j = 0; j <= 150; j++)
             {
-
+                if (i == noj)
+                {
+                    GameObject a = Instantiate(i, new Vector3(Random.Range(-500, 500), i.transform.position.y, Random.Range(-500, 500)), i.transform.rotation);
+                    a.transform.SetParent(word.transform);
+                }
+                else
+                {
+                    GameObject a = Instantiate(i, new Vector3(Random.Range(-500, 500), i.transform.position.y, Random.Range(-500, 500)), new Quaternion(i.transform.rotation.x, Random.rotation.y, i.transform.rotation.z, i.transform.rotation.w));
+                    a.transform.SetParent(word.transform);
+                }
+                
             }
         }
     }
